@@ -1,0 +1,10 @@
+toxic_env/
+features/
+models/
+Embeddings/
+data/
+__pycache__/
+*.npy
+*.npz
+.ipynb_checkpoints/
+.DS_Store

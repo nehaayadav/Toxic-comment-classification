@@ -1,0 +1,10 @@
+venv/
+features/
+models/
+embeddings/
+data/
+__pycache__/
+*.npy
+*.npz
+.ipynb_checkpoints/
+.DS_Store

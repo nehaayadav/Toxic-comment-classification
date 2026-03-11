@@ -1,10 +1,21 @@
+<<<<<<< HEAD
 venv/
 features/
 models/
 embeddings/
+=======
+toxic_env/
+features/
+models/
+Embeddings/
+>>>>>>> 9380c674fc30eea25f62d92e97a0960f4ad76e07
 data/
 __pycache__/
 *.npy
 *.npz
 .ipynb_checkpoints/
+<<<<<<< HEAD
 .DS_Store
+=======
+.DS_Store
+>>>>>>> 9380c674fc30eea25f62d92e97a0960f4ad76e07

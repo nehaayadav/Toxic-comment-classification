@@ -1,21 +1,25 @@
-<<<<<<< HEAD
+# Virtual environments
 venv/
-features/
-models/
-embeddings/
-=======
+env/
 toxic_env/
+
+# Generated project artifacts
 features/
 models/
+
+# Large embedding files
 Embeddings/
->>>>>>> 9380c674fc30eea25f62d92e97a0960f4ad76e07
-data/
+
+# Python cache
 __pycache__/
+*.pyc
+
+# Numpy artifacts
 *.npy
 *.npz
+
+# Jupyter
 .ipynb_checkpoints/
-<<<<<<< HEAD
+
+# OS files
 .DS_Store
-=======
-.DS_Store
->>>>>>> 9380c674fc30eea25f62d92e97a0960f4ad76e07

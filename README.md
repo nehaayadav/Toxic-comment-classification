@@ -15,6 +15,7 @@ The project explores multiple text representations and machine learning models t
 
 ## Dataset 
 https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
+Dataset: Jigsaw Toxic Comment Classification
 
 ~160,000 Wikipedia discussion comments
 6 toxicity labels
@@ -37,7 +38,7 @@ project/
 ```
 
 ## Project Pipeline
-```
+'''
 EDA → Text Cleaning → Feature Engineering
        ↓
 Text Representations
@@ -50,7 +51,7 @@ Hyperparameter Tuning
 Error Analysis
        ↓
 Final Model Selection
-```
+'''
 
 ### Feature Engineering
 
@@ -68,14 +69,14 @@ These features help capture stylistic patterns in toxic language.
 ### Text Representations
 
 Three encoding approaches were evaluated:
-
+'''
 | Method   | Description                         |
 | -------- | ----------------------------------- |
 | TF-IDF   | Frequency-based text representation |
 | Word2Vec | Contextual word embeddings          |
 | GloVe    | Pretrained global embeddings        |
 
-
+'''
 ### Models Evaluated
 
 - Logistic Regression

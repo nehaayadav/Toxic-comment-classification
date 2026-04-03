@@ -8,7 +8,7 @@ features/
 models/
 
 # Large embedding files
-Embeddings/
+embeddings/
 
 # Python cache
 __pycache__/

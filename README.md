@@ -11,7 +11,7 @@ The system performs multi-label classification to identify different types of to
 - insult
 - identity_hate
 
-The project explores multiple text representations and machine learning models to determine the best approach for toxicity detection.
+The project evaluates multiple text representations and machine learning models to identify the most effective approach for toxic comment detection.
 
 ## Dataset 
 https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
@@ -22,23 +22,53 @@ Dataset: Jigsaw Toxic Comment Classification
 Multi-label classification problem
 Highly imbalanced (≈90% non-toxic)
 
+## Example Prediction
+
+Input Comment
+
+"You are a complete idiot"
+
+Model Output
+
+toxic: 1  
+severe_toxic: 0  
+obscene: 0  
+threat: 0  
+insult: 1  
+identity_hate: 0
+
+## Demo
+
+An interactive web interface is provided using Streamlit.
+
+Run the application locally:
+
+```bash
+streamlit run app.py
+```
+![Toxic Comment Classifier Demo](images/demo.png)
+
 ## Project Structure
 
 ```
-project/
+toxic-comment-classifier/
 │
 ├── data/            # raw dataset
 ├── embeddings/      # GloVe embeddings
-├── features/        # processed features
-├── models/          # trained models
-├── notebooks/       # project notebooks
-├── src/             # reusable functions
+├── features/        # processed feature matrices
+├── models/          # trained models and vectorizers
+├── notebooks/       # EDA and modeling notebooks
+├── src/             # reusable preprocessing & feature code
 │
+├── predict.py       # prediction pipeline
+├── app.py           # Streamlit interface
+├── requirements.txt
 └── README.md
 ```
 
 ## Project Pipeline
-'''
+
+```
 EDA → Text Cleaning → Feature Engineering
        ↓
 Text Representations
@@ -51,7 +81,8 @@ Hyperparameter Tuning
 Error Analysis
        ↓
 Final Model Selection
-'''
+
+```
 
 ### Feature Engineering
 
@@ -69,14 +100,13 @@ These features help capture stylistic patterns in toxic language.
 ### Text Representations
 
 Three encoding approaches were evaluated:
-'''
+
 | Method   | Description                         |
-| -------- | ----------------------------------- |
+|----------|-------------------------------------|
 | TF-IDF   | Frequency-based text representation |
 | Word2Vec | Contextual word embeddings          |
 | GloVe    | Pretrained global embeddings        |
 
-'''
 ### Models Evaluated
 
 - Logistic Regression

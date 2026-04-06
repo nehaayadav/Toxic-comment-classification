@@ -45,7 +45,7 @@ Run the application locally:
 ```bash
 streamlit run app.py
 ```
-![Toxic Comment Classifier Demo](images/demo.png)
+![Toxic Comment Classifier Demo](images/Demo.png)
 
 ## Project Structure
 

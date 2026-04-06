@@ -17,10 +17,9 @@ The project evaluates multiple text representations and machine learning models 
 https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge
 Dataset: Jigsaw Toxic Comment Classification
 
-~160,000 Wikipedia discussion comments
-6 toxicity labels
-Multi-label classification problem
-Highly imbalanced (≈90% non-toxic)
+- ~160,000 Wikipedia discussion comments
+- Multi-label classification problem
+- Highly imbalanced (≈90% non-toxic)
 
 ## Example Prediction
 
